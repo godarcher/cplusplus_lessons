@@ -4,25 +4,35 @@ using namespace std;
 
 int main()
 { 
-    //create a string called command and parse user input into it
     string command;
-    cin >> command;
 
-    if (input == "encrypt int")
+    while (command != "exit")
     {
-        int input =
-    }
-    else if (input == "decrypt int")
-    {
+        cin >> command;
 
-    }
-    else
-    {
-        cout << "Please enter one of the following commands: <encrypt <type>> or <decrypt <type>>";
-    }
+        if (command == "encrypt_int")
+        {
+            cout << ("Please enter an int to be encrypted..");
+            int input;
+            cin >> input;
 
-    //TODO --> think of encryption
+            //TODO -- add actual encryption
+        }
+        else if (command == "decrypt_int")
+        {
+            cout << ("Please enter an int to be decrypted.");
+            int input;
+            cin >> input;
 
-    //print encrypted input
-    cout << input << endl;
+            //TODO -- add actual decryption
+        }
+        else if (command == "exit")
+        {
+            cout << "Terminated";
+        }
+        else
+        {
+            cout << "Please enter one of the following commands: <encrypt <type>> or <decrypt <type>>";
+        }
+    }
 }
