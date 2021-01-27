@@ -13,18 +13,18 @@ int main()
         if (command == "encrypt_int")
         {
             cout << ("Please enter an int to be encrypted..");
-            int input;
+            int input;                                                                         
             cin >> input;
-
-            //TODO -- add actual encryption
+            input = (input + 17) * 2;
+            cout << input;
         }
         else if (command == "decrypt_int")
         {
-            cout << ("Please enter an int to be decrypted.");
+            cout << ("Please enter an int to be decrypted..");
             int input;
             cin >> input;
-
-            //TODO -- add actual decryption
+            input = (input / 2) - 17;
+            cout << input;
         }
         else if (command == "exit")
         {
