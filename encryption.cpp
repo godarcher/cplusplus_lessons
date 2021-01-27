@@ -4,9 +4,22 @@ using namespace std;
 
 int main()
 { 
-    //create an int called input and parse user input into it
-    int input;
-    cin >> input;
+    //create a string called command and parse user input into it
+    string command;
+    cin >> command;
+
+    if (input == "encrypt int")
+    {
+        int input =
+    }
+    else if (input == "decrypt int")
+    {
+
+    }
+    else
+    {
+        cout << "Please enter one of the following commands: <encrypt <type>> or <decrypt <type>>";
+    }
 
     //TODO --> think of encryption
 
