@@ -26,6 +26,17 @@ int main()
             input = (input / 2) - 17;
             cout << input;
         }
+        else if (command == "encrypt_string")
+        {
+            cout << ("Please enter an string to be decrypted..");
+            string input; 
+            cin >> input;
+            input = "dfjk" + input + "asdf";
+        }
+        else if (command == "decrypt_string")
+        {
+            cout << ("Please enter an string to be decrypted..");
+        }
         else if (command == "exit")
         {
             cout << "Terminated";
