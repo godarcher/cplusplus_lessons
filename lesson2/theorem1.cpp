@@ -100,6 +100,17 @@ int main()
         my_int++;
     }
 
+    //note that we can use more parentheses: >, <, >=, <=
+    if (my_int < 5)
+    {
+        my_int++;
+    }
+
+    if (my_int >= 3)
+    {
+        my_int++;
+    }
+
 
 
 
