@@ -64,9 +64,41 @@ int main()
     string my_string3 = "sam";
     my_string = my_string2 + " " + my_string3; //this holds "hello sam", note that we also added a space to the string
 
-    //////////////////
+    /////////////////////
+    //LESSON 4: IF/ELSE//
+    /////////////////////
 
+    //if else statements are crucial in any coding language, they allow too something based upon a condition
+    //so if (condition is true) we will do a, else (so if condition is not true) we will do b
 
+    //the if syntax is: 
+    //if (condition_here) 
+    //{
+    // result_of_condition_here
+    //}
+
+    if (my_bool == false) //note that here for equal we use "=="
+    {
+        my_bool = true;
+    }
+    else //note that this only runs if my bool is not false
+    {
+        my_bool = false;
+    }
+
+    //we can also use else if for multiple if conditions
+    if (my_int == 1) 
+    {
+        my_bool = true;
+    }
+    else if (my_int == 2) //note that this only runs if my int is not equal to 1
+    {
+        my_bool = false;
+    }
+    else //note that this only runs if my int is not equal to 1 and not equal to 2
+    {
+        my_int++;
+    }
 
 
 
