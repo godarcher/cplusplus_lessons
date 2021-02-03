@@ -26,7 +26,7 @@ int main()
 			std::cout << "The answer is 4 \n";
 		}  
 	} 
-
+	
 	system("pause");
 	return 0;
 }

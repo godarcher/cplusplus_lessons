@@ -55,6 +55,17 @@ int main()
     //don't wrongly format your code, faulty intendation
 
     //arrays :)
+    int grades[10000];
     int grades[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+
+    //lets say i have 500 classmates
+    string classmates[500] = {};
+
+    for (int i = 0; i++; i < size(classmates))
+    {
+        classmates[i] = "name";
+    }
+
+    string dognames[20] = {}
 
 }
