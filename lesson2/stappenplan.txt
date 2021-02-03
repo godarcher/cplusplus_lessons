@@ -1,0 +1,7 @@
+1 install vs code locally
+2 install vs code extensions locally
+3 start liveshare
+4 practice last week basics, as it went quite fast
+5 get email and github, deliver theory schemes
+6 if time left start talking about arrays
+7 if more time left start talking about multidimensional arrays.
