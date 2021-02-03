@@ -52,7 +52,22 @@ int main()
     //how to overwrite string content
     my_string = "new content";
 
+    //however strings also have some interesting math like properties, see for yourself:
+    //mystring now holds --> "new content even more content", we used addition on a string
+    my_string = my_string + " even more content";
+
+    //we can do the above operation more elegant like this:
+    my_string += " even more content";
     
+    //we can also use strings to calculate strings
+    string my_string2 = "hello";
+    string my_string3 = "sam";
+    my_string = my_string2 + " " + my_string3; //this holds "hello sam", note that we also added a space to the string
+
+    //////////////////
+
+
+
 
 
 
