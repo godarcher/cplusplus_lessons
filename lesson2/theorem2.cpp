@@ -36,7 +36,18 @@ int main()
         my_int++;
     }
 
+    //if (my_int 3 or my_int 6 AND my_bool false) 
+    if ((my_int == 3 || my_int == 6) && my_bool == false)
+    {
+        my_int++;
+    }
+
+    my_int++;
+
+    int counter = 0;
+
     //coding do's and don'ts
+    //do: write longer terms with _
     //do: write out algorithms on paper to understand what it is you want to do
     //do: add whitelines between pieces of code
     //do: comment what code does
