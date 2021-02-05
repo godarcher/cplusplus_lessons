@@ -1,3 +1,4 @@
+
 //1: We need to include iostream to be able to cin cout
 //2: We need fstream to read and write files
 //3: We need string to use getline
@@ -23,6 +24,10 @@ for (int i = 0; i < 10; i++)
     string example = "reached";
 }
 
+//for loop steps
+//1 declare an integer inside the for loop (int i = 0;)
+//2 (condition) i < 10
+//3 (incrementer) i++
 
 //what does this say?
 int i = 0;
@@ -33,7 +38,6 @@ if (i < 10)
 i++;
 
 //then 
-
 int i = 1;
 if (i < 10)
 {
@@ -45,7 +49,12 @@ for (int i = 0; i < 10; i++)
 {
 
 }
-//i < 10 holds for, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
+
+for (int i = 0; i < 20; i++)
+{
+    cout << i;
+}
+//i < 10 holds for, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
 //so the for loop will be ran 10 times, we can use i inside the for loop as a counter
 
 ////////////////////
