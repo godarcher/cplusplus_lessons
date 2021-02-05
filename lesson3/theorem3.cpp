@@ -117,3 +117,54 @@ if (myfile.is_open())
 
 else cout << "Unable to open file"; 
 }
+
+//normal array
+int myNum[3] = {10, 20, 30};
+
+//written differently
+int myNum[3] = 
+{
+    10, 
+    20, 
+    30
+};
+
+//this array use one direction of filling
+//in real life we have x, y ,z 
+//in math we mostly have x and y
+//in arrays we can also use two dimensions instead of one
+
+int x[3][4] = 
+{
+    {0,1,2,3}, 
+    {4,5,6,7}, 
+    {8,9,10,11}
+};
+
+//written out further
+int x[3][4] = 
+{
+    {
+    0,
+    1,
+    2,
+    3
+    }, 
+    {4,5,6,7}, 
+    {8,9,10,11}
+};
+
+//make a chess game
+char chessboard[8][8] =
+{
+    {'T','H','B','K','Q','B','H','T'},
+    {'P','P','P','P','P','P','P','P'},
+    {'E','E','E','E','E','E','E','E'},
+    {'E','E','E','E','E','E','E','E'},
+    {'E','E','E','E','E','E','E','E'},
+    {'E','E','E','E','E','E','E','E'},
+    {'P','P','P','P','P','P','P','P'},
+    {'T','H','B','K','Q','B','H','T'}
+};
+
+//galgje

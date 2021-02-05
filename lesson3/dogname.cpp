@@ -166,4 +166,19 @@ int main()
 		cout << dognames2[i] << endl;
 	}
 	*/
+
+	int random;
+	//generates a random number between 1 and 100
+
+	//we need a generator
+	srand(time(0));
+
+	//we make a random with use of the generator
+	random = rand() % 6 + 1;
+
+	//access the v2th element of dognames2[]
+	string dogStr1ng = dognames2[random];
+
+	//printing the dogstring
+	cout << "We selected dog nummer " << dogStr1ng << endl;
 }
