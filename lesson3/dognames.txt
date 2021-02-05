@@ -1,4 +1,3 @@
-[
 	"Max",
 	"Buddy",
 	"Charlie",
@@ -99,4 +98,3 @@
 	"Cash",
 	"Archie",
 	"Walter"
-]
