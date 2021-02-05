@@ -66,6 +66,6 @@ int main()
         classmates[i] = "name";
     }
 
-    string dognames[20] = {}
+    string dognames[20] = {};
 
 }
