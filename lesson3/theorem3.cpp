@@ -78,39 +78,29 @@ string dognames[20] = {};
 
 //note the #include <fstream> at the top of this
 
-    //WRITING
-    ofstream myFile_Handler;
-    // File Open
-    myFile_Handler.open("File_1.txt");
+//WRITING
+ofstream myFile_Handler;
+// File Open
+myFile_Handler.open("File_1.txt");
 
-    // Write to the file
-    myFile_Handler << "This is a sample test File. " << endl;
-    myFile_Handler << "This is the second line of the file. " << endl;
+// Write to the file
+myFile_Handler << "This is a sample test File. " << endl;
+myFile_Handler << "This is the second line of the file. " << endl;
 
-    // File Close
-    myFile_Handler.close();
+// File Close
+myFile_Handler.close();
 
-    //READING
-    ifstream myFile_Handler;
-    string myLine;
-
-    // File Open in the Read Mode
-    myFile_Handler.open("File_1.txt");
-
-    if(myFile_Handler.is_open())
+//READING
+string line;
+ifstream myfile ("example.txt");
+if (myfile.is_open())
+{
+    while ( getline (myfile,line) )
     {
-        // Keep reading the file
-        while(getline(myFile_Handler, myLine))
-        {
-            // print the line on the standard output
-            cout << myLine << endl;
-        }
-    // File Close
-    myFile_Handler.close();
+        cout << line << '\n';
     }
-    else
-    {
-        cout << "Unable to open the file!";
-    }
-    return 0;
+    myfile.close();
+}
+
+else cout << "Unable to open file"; 
 }
