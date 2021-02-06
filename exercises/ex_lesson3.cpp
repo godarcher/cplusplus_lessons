@@ -22,8 +22,9 @@ int main()
 
     // TODO 4 Create 3 for loops to iterate over all these arrays and print all their elements.
     int exit_condition = 10;
-    for (int i, i < exit_condition, i++)
+    for (int i; i < exit_condition; i++)
     {
+        //placeholder code
     }
 
     //* BONUS ASSIGNMENT
