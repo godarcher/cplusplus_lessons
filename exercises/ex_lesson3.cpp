@@ -13,11 +13,11 @@ int main()
        * 3: If you have finished this assignment, let me know and I will send you the answer model I wrote.
     */
 
-    // TODO 1 Fill the below array, int hexadecimals with all hexadecimals
+    // TODO 1 Fill the below array, int hexadecimals with all hexadecimal symbols from the hexadecimal base
     int hexadecimals[16];
-    // TODO 2 Fill the below array, int decimals, with all decimals
+    // TODO 2 Fill the below array, int decimals, with all decimal symbols from the decimal base
     int decimals[10];
-    // TODO 3 Fill the below array, int binary, with all binary
+    // TODO 3 Fill the below array, int binary, with all binary symbols from the binary base
     int binary[2];
 
     // TODO 4 Create 3 for loops to iterate over all these arrays and print all their elements.
