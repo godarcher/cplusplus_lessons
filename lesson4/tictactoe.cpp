@@ -133,32 +133,74 @@ int main()
         {
             board[1] = marking;
         }
+
         else if (choice == 2 && board[2] == '2')
         {
             board[2] = marking;
         }
-    }
 
-    //TODO: Make code
-    //Subdivide and conquer
-    //* 1 --> i need to display a board on the screen containing places where i as player can place an x or an o
+        else if (choice == 3 && board[3] == '3')
+        {
+            board[3] = marking;
+        }
 
-    //! We are going to make tic-tac-toe!
-    //? But where do i start??? tic tac toe exists of several elements
-    //? I need to subdivide the task --> make tic tac toe, into smaller subtasks
+        else if (choice == 4 && board[4] == '4')
+        {
+            board[4] = marking;
+        }
 
-    //* sub problems
-    //? we need two players
-    //? implement a function to place a move
-    //? check wether the given location does not already contain a piece
+        else if (choice == 5 && board[5] == '5')
+        {
+            board[5] = marking;
+        }
 
-    //* sub solutions
-    //? we need two players --> we use symbols o and x, and let the players move after each other
-    //? tell us who has won --> check after each move if there are 3 x's or 3 o's in a row to determine which party has won --> then print (x's have won or o's have won)
-    //? show a table to the players --> make a very basic table being empty at the start
-    //? change the table every time we place a thing --> if move is made, adjust table with move
-    //? implement a function to place a move --> if button pressed --> place move at position specified
-    //? check wether the given location does not already contain a piece --> does it contain x or o --> return already occurpied --> otherwise call function above
+        else if (choice == 6 && board[6] == '6')
+        {
+            board[6] = marking;
+        }
+
+        else if (choice == 7 && board[7] == '7')
+        {
+            board[7] = marking;
+        }
+
+        else if (choice == 8 && board[8] == '8')
+        {
+            board[8] = marking;
+        }
+
+        else if (choice = 9 && board[9] == '9')
+        {
+            board[9] = marking;
+        }
+
+        //only reached if input is not >= 1 and =< 9 (minimal 1, maximal 9)
+        else
+        {
+            cout << "The move you made is invalid, please enter a number in range 1 till 9" << endl;
+            player--;
+            cin.ignore();
+            cin.get();
+        }
+
+        i = check_won();
+        player++;
+    } while (i == -1);
 
     show_my_board();
+
+    if (i == 1)
+    {
+        cout << "1Player" << --player << " has won the game ";
+    }
+    else
+    {
+        cout << "Game is a Draw";
+    }
+
+    cin.ignore();
+    cin.get();
+
+    //return 0 in main --> stop the code/application
+    return 0;
 }
