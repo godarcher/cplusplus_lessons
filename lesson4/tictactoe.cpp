@@ -13,13 +13,11 @@ int check_won()
     //* it returns 1 if player x has won, 0 if there is a draw, and -1 if player y has won
 
     //? Winning possibilities
-    //* 123, 456, 789
+    //! 123, 456, 789
     //! 147, 258, 369
     //! 159, 357
-    // if 1 == 2 == 3 then won
 
-    //* Drawing possibilities
-
+    //? Drawing possibilities
     //123
     if (board[1] == board[2] && board[1] == board[3])
     {
@@ -38,7 +36,48 @@ int check_won()
         return 1;
     }
 
-    //TODO: 147, 258, 369, 159, 357
+    //147
+    else if (board[1] == board[4] && board[4] == board[7])
+    {
+        return 1;
+    }
+
+    //258
+    else if (board[2] == board[5] && board[5] == board[8])
+    {
+        return 1;
+    }
+
+    //369
+    else if (board[3] == board[6] && board[6] == board[9])
+    {
+        return 1;
+    }
+
+    //159
+    else if (board[1] == board[5] && board[5] == board[9])
+    {
+        return 1;
+    }
+
+    //357
+    else if (board[3] == board[5] && board[5] == board[7])
+    {
+        return 1;
+    }
+
+    else if (board[1] != '1' && board[2] != '2' && board[3] != '3' &&
+             board[4] != '4' && board[5] != '5' && board[6] != '6' &&
+             board[7] != '7' && board[8] != '8' && board[9] != '9')
+    {
+        return 0;
+    }
+
+    //indication that something is going wrong
+    else
+    {
+        -1;
+    }
 
     //TODO: 1 --> use arrows to select where to move, 2 --> create an ai to play against you (singleplayer)
 }
