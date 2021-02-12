@@ -73,10 +73,10 @@ int check_won()
         return 0;
     }
 
-    //indication that something is going wrong
+    //game is still in progress
     else
     {
-        -1;
+        return -1;
     }
 
     //TODO: 1 --> use arrows to select where to move, 2 --> create an ai to play against you (singleplayer)
@@ -115,7 +115,29 @@ void show_my_board()
 
 int main()
 {
-    cout << "Please choose a number (1-9) to make a move" << endl;
+    int player = 1, i, choice;
+
+    char marking;
+
+    do
+    {
+        show_my_board();
+        player = (player % 2) ? 1 : 2;
+
+        cout << "Player " << player << ", please enter a number: ";
+        cin >> choice;
+
+        marking = (player == 1) ? 'X' : 'O';
+
+        if (choice == 1 && board[1] == '1')
+        {
+            board[1] = marking;
+        }
+        else if (choice == 2 && board[2] == '2')
+        {
+            board[2] = marking;
+        }
+    }
 
     //TODO: Make code
     //Subdivide and conquer
