@@ -127,8 +127,6 @@ int main()
 
     //* sub problems
     //? we need two players
-    //? tell us who has won
-    //? check if there are 3 x's or 3 o's in a row to determine which party has won
     //? implement a function to place a move
     //? check wether the given location does not already contain a piece
 
