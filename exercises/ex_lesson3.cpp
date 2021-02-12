@@ -5,7 +5,6 @@ using namespace std;
 
 int main()
 {
-
     /*
        ! Your assignment for this week
        ? 1: Install better comments plugin (then this strange comments will also make more sense)
