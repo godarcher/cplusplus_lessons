@@ -1,6 +1,14 @@
 #include <iostream>
 using namespace std;
 
+//using arrow keys
+#include <conio.h>
+
+#define KEY_UP 72
+#define KEY_DOWN 80
+#define KEY_LEFT 77
+#define KEY_RIGHT 75
+
 //we count positions starting from 0 --> position 0 contains an o, position 1 contains a 1, position
 char board[10] = {'o',
                   '1', '2', '3',
@@ -201,6 +209,62 @@ int main()
     cin.ignore();
     cin.get();
 
+    //TODO: make an ai that plays against you (singleplayer)
+    //* we want the ai to make the best move possible always
+
+    //! case 1 --> we begin (make the first move)
+
+    //! case 2 --> the ai can move first
+    //* case 1 if the ai can win by making a move --> make that move
+    //* case 2 if the ai can block a winning from the opposition --> make that move
+    //* case 3 (move 1) if the ai goes first --> place its number on the middle spot   
+    
+    //? AI is o, player is x in those examples
+
+    //move 1
+    // 1 2 3
+    // 4 o 6
+    // 7 8 9
+
+    //* as a player at this point we can do all moves but not move 5
+    //* statisticly all moves now are equally as smart for the ai
+    //? Random pick, the ai is going to make move 2
+
+    // lets say the player does move 1, or move 3, or 4, 6, 7, 9 --> ai still makes move at 2
+    // if the player moves at 2 or at 8 --> we move at 6
+
+    //move 2
+    // 1 o 3
+    // x o 6
+    // 7 8 9
+
+    //* in this case 8 is a winning move for the ai, however the player is first
+    //? if player does not play 8, play 8
+
+    //! else if the player does not play 8
+    //move 3
+    // 1 o 3
+    // 3 o 6
+    // 7 x 9
+
+    //move 2
+    // 1 2 3
+    // x o o
+    // 7 8 9
+
+    //* as long as 2 and 8 are free try to move 2
+    //* else if 2 and 8 are not free try to move 3 and 7
+    //* else if 3 and 7 are not free try to move 3 and 9
+
+    //* in this case 4 is a winning move for the ai, however the player is first
+    //? if player does not play 4, play 4
+
+    //! else if the player does not play 8
+    //move 2
+    // 1 2 3
+    // x o o
+    // 7 8 9
+
+
     //return 0 in main --> stop the code/application
     return 0;
-}
